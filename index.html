@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>JavaScript Quiz</title>
+</head>
+<body>
+    <!-- container holding all content -->
+    <div class="container" id="container">
+        <!-- leaderboard jump and timer -->
+        <nav>
+            <ul>
+                <li id="finalScore"><button class="leaderboard-text-btn" id="jump-leaderboard">Leaderboard</button></li>
+                <li id="time">Time: 100</li>
+            </ul>
+        </nav>
+        <!-- start/homepage content -->
+        <div id="home" class="home-page">
+            <h1 class="title-info">Coding Quiz Challenge</h1>
+            <p class="title-info">Try to answer the following questions within the time limit. </br>Keep in mind that wrong answers will penalize your score/time by ten seconds.</p>
+            <button class="btn" id="start-btn">Start Quiz</button>
+        </div>
+        <!-- question and answer content -->
+        <div id="quiz" class="hide">
+            <h1 class="width" id="question">Question</h1>
+            <div class="answerlist" id="answerId">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <!-- quiz ended, username input -->
+            <div id="endgame" class="hide">
+                <h1 class="width">All done!</h1>
+                <p class="width finish-score" id="finish-score"></p>
+                <div class="finished-quiz">
+                    <p>
+                        Enter Initials: 
+                        <input type="text" name="saved-user" class="score-input"/>
+                        <button type="submit" class="btn" id="save-score">Submit</button>
+                    </p>
+                </div>
+            </div>
+            <!-- right/wrong notification -->
+            <div>
+                <section id="inputCorrect" class="hide">Correct!</section>
+                <section id="inputWrong" class="hide">Wrong!</section>
+            </div>
+        </div>
+        <!-- Scoreboard Section -->
+        <div class="hide" id='scoreboard'>
+            <h1 class="width">HighScores</h1>
+            <ol class="user-scores" id="name-input"></ol>
+            <div class="leaderboard-btn">
+                <button class="btn" id="reset-quiz">Go Back</button>
+                <button class="btn"id="clear">Clear Scores</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="./assets/js/script.js"></script>
+</html>

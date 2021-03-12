@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding-top: 10%;
+    height: 100%;
+}
+.hide {
+    display: none;
+}
+/* Start Quiz Screen */
+.home-page {
+    margin: 10px;
+    padding: 10px;
+}
+
+.title-info {
+    margin-bottom: 10px;
+}
+
+/* button style */
+.btn {
+    background-color: darkslateblue;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    margin: 4px;
+    padding: 10px;
+    outline: none;
+    text-align: left;
+}
+.btn:hover {
+    background-color: magenta;
+}
+/* Question/Answer Displays */
+.answerlist {
+    display: grid;
+    justify-content: left;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.width {
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* jump leaderboard and timer */
+.container nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* right/wrong answer */
+.feedback {
+    color: gray;
+    border-top: solid 2px grey;
+    text-align: left;
+    margin: 24px 25% 0 25%;
+    font-size: 24px;
+    font-style: italic;
+    padding-top: 8px;
+}
+/* Finished Quiz */
+.score-input {
+    padding: 10px 20% 10px 10px;
+    margin: 4px;
+    font-size: 18px;
+}
+
+.finished-quiz {
+    display: inline;
+}
+
+.finish-score {
+    font-size: 20px;
+}
+
+.user-scores {
+    background-color: rgb(203, 198, 235);
+    margin: 0 25% 0 25%;
+    text-align: left;
+    border-top: white 1px solid;
+
+}
+/* Leaderboard */
+.leaderboard-btn {
+    text-align: left;
+    margin-left: 25%;
+}
+.leaderboard-text-btn {
+    background-color: white;
+    color: magenta;
+    border: none;
+    font-size: 16px;
+}
+
+.high-scores {
+    font-size: 20px;
+    margin-bottom: 6px;
+    padding: 6px;
+}
